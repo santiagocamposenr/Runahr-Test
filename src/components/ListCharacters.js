@@ -64,8 +64,31 @@ const ListCharacters = () => {
         loadCharacters();
     }, [])
 
+    const cardInformation = characters.map(characters => 
+                 `<li>
+                 <p><strong>Nombre:</strong> ${characters.name}</p>
+                 name: ${characters.name}  
+                 nickname: ${characters.nickname} 
+                 status: ${characters.status} 
+                 <img src="${characters.img}">
+                 img: ${characters.img}
+                 <li/>
+    `);
+
+    const imagen = characters.map(characters => `${characters.img}`);
+    console.log(cardInformation);
+    console.log('imagen', imagen);
+    const imag2 = characters.name;
+    console.log('what?', imag2);
+    
+    
+
     return(
-        <div>ListCharacters</div>
+        <div>
+
+            <div>{cardInformation}</div>
+            {/* <img alt='idonknow' src={imagen} /> */}
+        </div>
     )
 }
 
