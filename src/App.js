@@ -1,13 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import MockFile from './views/mockfile'
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-        Hi everyone
-    </div>
-  );
+class App extends Component {
+  render(){
+      return (
+          <Router basename={window.location.pathname || ''}>
+              <Switch>
+                  <Route exact path='/' component={MockFile}/>
+              </Switch>
+          </Router> 
+      );
+  }
 }
 
 export default App;
