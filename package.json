@@ -2,7 +2,7 @@
   "name": "runahr-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/RosaIsela31/Runahr-Test",
+  "homepage": "https://rosaisela31.github.io/Runahr-Test/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
