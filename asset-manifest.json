@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/RosaIsela31/Runahr-Test/static/css/main.d1b05096.chunk.css",
+    "main.js": "/RosaIsela31/Runahr-Test/static/js/main.4a375076.chunk.js",
+    "main.js.map": "/RosaIsela31/Runahr-Test/static/js/main.4a375076.chunk.js.map",
+    "runtime-main.js": "/RosaIsela31/Runahr-Test/static/js/runtime-main.149ca258.js",
+    "runtime-main.js.map": "/RosaIsela31/Runahr-Test/static/js/runtime-main.149ca258.js.map",
+    "static/js/2.df747c95.chunk.js": "/RosaIsela31/Runahr-Test/static/js/2.df747c95.chunk.js",
+    "static/js/2.df747c95.chunk.js.map": "/RosaIsela31/Runahr-Test/static/js/2.df747c95.chunk.js.map",
+    "index.html": "/RosaIsela31/Runahr-Test/index.html",
+    "precache-manifest.33b5fe14950073960ac6a0d9dcbe79f0.js": "/RosaIsela31/Runahr-Test/precache-manifest.33b5fe14950073960ac6a0d9dcbe79f0.js",
+    "service-worker.js": "/RosaIsela31/Runahr-Test/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/RosaIsela31/Runahr-Test/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.df747c95.chunk.js.LICENSE": "/RosaIsela31/Runahr-Test/static/js/2.df747c95.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.149ca258.js",
+    "static/js/2.df747c95.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.4a375076.chunk.js"
+  ]
+}
