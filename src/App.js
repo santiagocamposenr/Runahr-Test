@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import MockFile from './views/mockfile'
+import BreakingBadComponent from './components/BreakingBadComponent'
 
 import './App.css';
 
@@ -10,7 +10,7 @@ class App extends Component {
       return (
           <Router basename={window.location.pathname || ''}>
               <Switch>
-                  <Route exact path='/' component={MockFile}/>
+                  <Route exact path='/' component={BreakingBadComponent}/>
               </Switch>
           </Router> 
       );
