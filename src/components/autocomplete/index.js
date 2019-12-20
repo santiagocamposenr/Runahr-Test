@@ -66,11 +66,11 @@ class Autocomplete extends Component {
                         key={suggestion.id}
                         component="div"
                         onClick={() => {
-                            onChangeSelection(suggestion.title);
+                            onChangeSelection(suggestion.name);
                             this.setState({ isOpen: false });
                         }}
                     >
-                        {suggestion.title}
+                        {suggestion.name}
                     </MenuItem>)}
                 </Paper>}
             </div>
