@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react';
+import Navbar from '../Navbar';
 
 const Page = () => {
   return(
-      <Fragment>Results</Fragment>
+      <Fragment>
+          <Navbar />
+      </Fragment>
   )
 }
 
