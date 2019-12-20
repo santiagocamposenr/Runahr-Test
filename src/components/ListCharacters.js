@@ -1,5 +1,5 @@
 import React,{ useState, useEffect } from "react";
-import { getCharacters } from '../services';
+import { getCharacters } from '../services/index';
 import BreakingBad from './BreakingBad';
 
 // class BreakingBadComponent extends Component{
@@ -51,18 +51,22 @@ const ListCharacters = () => {
     useEffect(() => {
         const loadCharacters = async () => {
             const response = await getCharacters()
-            console.log(response);
+            // console.log(response);
 
             if(response.status === 200){
                     setCharacters(response.data)
             }
 
             const name = response.data
-            console.log('hola', name);
+            // console.log('hola', name);
             
+            console.log('response', response);
         }
         loadCharacters();
     }, [])
+    
+    console.log('characters hi', characters);
+    
 
     const cardInformation = characters.map(characters => 
                  `<li>
@@ -76,10 +80,10 @@ const ListCharacters = () => {
     `);
 
     const imagen = characters.map(characters => `${characters.img}`);
-    console.log(cardInformation);
-    console.log('imagen', imagen);
+    // console.log(cardInformation);
+    // console.log('imagen', imagen);
     const imag2 = characters.name;
-    console.log('what?', imag2);
+    // console.log('what?', imag2);
     
     
 

@@ -3,7 +3,7 @@ export const type = 'findSuggestions';
 const findSuggestions = text => {
     return{
         type,
-        payload: id,
+        payload: text,
 
     }; 
 };

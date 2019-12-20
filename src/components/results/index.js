@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Page from './page';
 
-class Details extends Component {
+class Results extends Component {
   render(){
       const { suggestions } = this.props;
       console.log(suggestions);
@@ -19,7 +19,7 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps)(Details);
+export default connect(mapStateToProps)(Results);
 
 // with connect we can connect the component with the state. Need two arguments, the first one is mapStateToProps, the second one is mapDispatchToProps
 

@@ -1,19 +1,13 @@
-const defaultState = [
-    {
-        id: 1,
-        title: 'findSuggestions'
-    }
-];
+import{ type as findSuggestionsType } from '../actions/findSuggestions';
+import items from '../../data/items';
+
+const defaultState = []
 
 const reducer = ( state = defaultState, { type, payload } ) => {
     switch(type){
-        case 'findSuggestions': {
-            return [
-                {
-                    id: 1,
-                    title: 'findSuggestions'
-                }
-            ]
+        case findSuggestionsType: {
+            const regex =  new RegExp(`^${payload}`, 'i');
+            return items.filter(n => regex.test(n.name ))
         }
         default: 
             return state;

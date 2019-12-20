@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 
 import Autocomplete from '../autocomplete';
 
-// import './style/style.css';
+import './style.css';
 
 function Page(props){
   const {
@@ -35,3 +35,7 @@ function Page(props){
 };
 
 export default Page;
+
+
+//onchangetext will be to change when the text in the box change
+//onChangeSelection is only call when the user push ENTER 
