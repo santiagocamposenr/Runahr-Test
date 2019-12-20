@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Redirect, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-// import ListCharacters from './components/ListCharacters'
+import ListCharacters from './components/ListCharacters'
 //COMPONENTS
 import Results from './components/results';
 import Details from './components/details';
+
+import store from './redux/store';
+
 
 
 import './App.css';
@@ -12,17 +16,20 @@ import './App.css';
 class App extends Component {
   render(){
       return (
-          <Router basename={window.location.pathname || ''}>
-              <Switch>
-                  {/* <Route exact path='/' component={ListCharacters}/> */}
-                  <Route exact path='/results' component={Results}/>
-                  <Route exact path='/details:itemId' component={Details}/>
-                  <Redirect from ='/' to='/results' />
-
-              </Switch>
-          </Router> 
+            <Provider store={store}>
+                    <BrowserRouter>
+                            <Switch>
+                                    {/* <Route path='/' component={ListCharacters} />          */}
+                                    <Route path='/details/:itemId' component={Details} />
+                                    <Route path='/results' component={Results} />
+                                    <Redirect from='/' to='/results' />
+                            </Switch>
+                    </BrowserRouter>
+             </Provider>
       );
   }
 }
 
 export default App;
+
+// React-redux - integration between component's react and redux: PROVIDER
