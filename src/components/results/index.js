@@ -1,25 +1,34 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import Page from './page';
 
 class Results extends Component {
   render(){
-      const { suggestions } = this.props;
-      console.log(suggestions);
+      const { results } = this.props;
+      console.log(results);
       
       return(
-          <Page suggestions={suggestions} />
+          <Page 
+              results={results} 
+              goTo={(path) => {
+                this.props.history.push(path);
+              }}
+          />
+
       )
   }
 }
 
 const mapStateToProps = (state) => {
     return{
-      suggestions: state.suggestions
+      results: state.results
     }
 };
 
-export default connect(mapStateToProps)(Results);
+export default withRouter(
+  connect(mapStateToProps)(Results)
+) 
 
 // with connect we can connect the component with the state. Need two arguments, the first one is mapStateToProps, the second one is mapDispatchToProps
 

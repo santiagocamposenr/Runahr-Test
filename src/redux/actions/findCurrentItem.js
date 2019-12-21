@@ -1,9 +1,9 @@
 export const type = 'findCurrentItem';
 
-const findCurrentItem = id => {
+const findCurrentItem = char_id => {
     return{
         type,
-        payload: id,
+        payload: char_id,
 
     }; 
 };

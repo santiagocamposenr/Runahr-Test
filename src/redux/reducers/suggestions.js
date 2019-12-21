@@ -7,7 +7,7 @@ const reducer = ( state = defaultState, { type, payload } ) => {
     switch(type){
         case findSuggestionsType: {
             const regex =  new RegExp(`^${payload}`, 'i');
-            return items.filter(n => regex.test(n.name ))
+            return items.filter(n => regex.test(n.name))
         }
         default: 
             return state;
