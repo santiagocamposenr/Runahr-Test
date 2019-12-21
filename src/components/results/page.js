@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import Navbar from '../Navbar';
 import { Typography } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
@@ -12,20 +12,6 @@ import items from '../../data/items';
 
 import './style.scss';
 
-// class Prueba extends Component {
-//     componentDidMount(){
-//               fetch('https://breakingbadapi.com/api/characters')
-//                   .then(response => response.json())
-//                   .then(charactersJson => this.setState({ characters: charactersJson }))
-//           }
-
-//     render(){
-//       const name = this.state.characters
-//       console.log('kkkkk', name)
-
-//         return(<div></div>)
-//     }
-// }
 
 const Page = (props) => {
   const {
