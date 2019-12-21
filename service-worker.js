@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Runahr-Test/precache-manifest.4bccffbaa30e7338739862c6bdbefd77.js"
+  "/Runahr-Test/precache-manifest.d8a2629430278f4a460bd0f8a4b08682.js"
 );
 
 self.addEventListener('message', (event) => {
