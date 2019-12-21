@@ -26,7 +26,6 @@ const Page = (props) => {
               {
                 isEmpty ?
                 items.map( item => 
-
                 <div   
                     key={item.char_id}
                     className='container-default-img'
