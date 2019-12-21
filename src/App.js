@@ -9,8 +9,6 @@ import Details from './components/details';
 
 import store from './redux/store';
 
-
-
 import './App.css';
 
 class App extends Component {
@@ -19,7 +17,7 @@ class App extends Component {
             <Provider store={store}>
                     <BrowserRouter>
                             <Switch>
-                                    {/* <Route path='/' component={ListCharacters} />          */}
+                                    {/* <Route path='/' component={Results} />          */}
                                     <Route path='/details/:itemId' component={Details} />
                                     <Route path='/results' component={Results} />
                                     <Redirect from='/' to='/results' />

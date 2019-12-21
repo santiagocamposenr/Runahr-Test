@@ -1,0 +1,42 @@
+.container-default-img{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.div-prueba{
+  background-image: url('../../img/prueba.png');
+  background-repeat: no-repeat;
+  
+  height: 40rem;
+  width: 100%
+  
+}
+
+.prueba{
+  height: 50%;
+  width: 50%;
+}
+
+.results-page {
+  padding: 3rem 1rem;
+  height: 15rem;
+}
+
+.card {
+  width: 345px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card-media {
+  height: 140px;
+}
+
+.page-message {
+  text-align: center;
+}

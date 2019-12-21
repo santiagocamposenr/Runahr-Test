@@ -3,7 +3,14 @@ import InputBase from '@material-ui/core/InputBase';
 // import SearchIcon from '@material-ui/icons/Search';
 import Paper from '@material-ui/core/Paper';
 import MenuItem from '@material-ui/core/MenuItem';
-import './style.css';
+// import './style.css';
+import './style.scss';
+
+import { MdSearch } from "react-icons/md";
+
+
+
+
 
 class Autocomplete extends Component {
     constructor(props) {
@@ -30,7 +37,11 @@ class Autocomplete extends Component {
                 {/* <div className="container-icon">
                     <SearchIcon />
                 </div> */}
+                <div className="container-icon">
+                    <MdSearch className='search-icon' />
+                </div>
                 <InputBase
+                    className='search'
                     placeholder="Search…"
                     value={text}
                     style={{ width: '100%' }}

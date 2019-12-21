@@ -39,6 +39,9 @@ class Navbar extends Component {
               suggestions={suggestions }
               onChangeText={this.onChangeText}
               onChangeSelection ={this.onChangeSelection}  
+              goTo={(path) => {
+                this.props.history.push(path);
+              }}
           />
       )
   }
