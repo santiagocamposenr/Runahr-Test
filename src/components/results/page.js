@@ -12,11 +12,13 @@ import items from '../../data/items';
 
 import './style.scss';
 
+
 const Page = (props) => {
   const {
       results, 
       goTo,
   } = props;
+    
 
   const isEmpty =  results.length === 0;
   return(

@@ -41,7 +41,6 @@ function Page(props){
                   onChangeText={onChangeText}
                   onChangeSelection={onChangeSelection}
              />
-            {/* <AccountCircle /> */}
         </Toolbar>
     </AppBar>
   )
