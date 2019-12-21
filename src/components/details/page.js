@@ -5,7 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Navbar from '../Navbar/index';
 import Button from '@material-ui/core/Button';
-import './style.css';
+import './style.scss';
 
 function Page(props) {
   const {
@@ -38,7 +38,11 @@ function Page(props) {
                           />
 
                           <Typography gutterBottom component="p" className="content">
-                              {currentItem.status}
+                              {`Nickname: ${currentItem.nickname}`} <br/>
+                              {`Status: ${currentItem.status}`} <br/>
+                              {`Occupation: ${currentItem.occupation}`} <br/>
+                              {`Portrayed: ${currentItem.portrayed}`} 
+                              portrayed
                           </Typography>
                       </Fragment>
                       :

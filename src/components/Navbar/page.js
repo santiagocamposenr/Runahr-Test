@@ -2,26 +2,39 @@ import React from 'react';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 
 import Autocomplete from '../autocomplete';
+import bad from '../../img/bad.png';
+import Button from '@material-ui/core/Button';
 
-import './style.css';
+
+
+// import './style.css';
+import './style.scss';
+
 
 function Page(props){
   const {
+    goTo,
       text,
       suggestions,
       onChangeText,
-      onChangeSelection
+      onChangeSelection,
   } = props;
 
   return(
-    <AppBar position='static'>
-        <Toolbar className='appbar'>
-            <Typography variant='h6' color='inherit'>
-                RunaHR Test
-            </Typography>
+    <AppBar position='static' className='navbar-appbar'>
+        <Toolbar className='navbar'>
+        <Button
+                      color="primary"
+                      onClick={() => goTo('/results')}
+                  >
+                      
+            <img alt='bad' src={bad} className='bad-img' />
+                  </Button>
+        
+       
+            
             <Autocomplete 
                   text={text}
                   suggestions={suggestions}

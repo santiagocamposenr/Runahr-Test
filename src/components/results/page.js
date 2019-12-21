@@ -6,7 +6,11 @@ import CardActionArea from '@material-ui/core/CardActionArea'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 
-import './style.css';
+import items from '../../data/items';
+
+
+
+import './style.scss';
 
 const Page = (props) => {
   const {
@@ -21,9 +25,33 @@ const Page = (props) => {
           <div className='results-page'>
               {
                 isEmpty ?
-                <Typography variant='h5' component='h3' className='page-message'>
-                    Busca a tu personaje Favorito
-                </Typography>
+                items.map( item => 
+                <div   
+                    key={item.char_id}
+                    className='container-default-img'
+                >
+                        <Card
+                                className="card"
+                                onClick={() => goTo(`/details/${item.char_id}`)}
+                        >
+                                <CardActionArea>
+                                        <CardMedia 
+                                            className='card-media'
+                                            image={item.img}
+                                            title={item.name}
+                                        />
+                                        <CardContent>
+                                                <Typography gutterBottom variant="h5" component="h2">
+                                                    {item.name}
+                                                </Typography>
+                                                <Typography component="p">
+                                                    {item.nickname}
+                                                </Typography>
+                                        </CardContent>
+                                </CardActionArea>
+                        </Card>
+                </div>
+                )
                 :
                 results.map(item =>  
                   <div
@@ -51,7 +79,8 @@ const Page = (props) => {
                               </CardContent>
                           </CardActionArea>
                   </Card>
-                   
+
+                  
                   </div>
                   )
                  
