@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
-import ListCharacters from './components/ListCharacters'
+// import ListCharacters from './components/ListCharacters'
 //Components
 import Results from './components/results';
 import Details from './components/details';

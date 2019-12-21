@@ -1,6 +1,5 @@
 import React,{ useState, useEffect } from "react";
 import { getCharacters } from '../services/index';
-import BreakingBad from './BreakingBad';
 
 // class BreakingBadComponent extends Component{
 //   constructor(props){
@@ -45,7 +44,7 @@ import BreakingBad from './BreakingBad';
 
 
 const ListCharacters = () => {
-    const [isLoading, setisLoading] = useState(true)
+    // const [isLoading, setisLoading] = useState(true)
     const [characters, setCharacters] = useState([])
 
     useEffect(() => {
@@ -57,7 +56,7 @@ const ListCharacters = () => {
                     setCharacters(response.data)
             }
 
-            const name = response.data
+            // const name = response.data
             // console.log('hola', name);
             
             console.log('response', response);
@@ -65,7 +64,7 @@ const ListCharacters = () => {
         loadCharacters();
     }, [])
     
-    console.log('characters hi', characters);
+    // console.log('characters hi', characters);
     
 
     const cardInformation = characters.map(characters => 
@@ -79,10 +78,10 @@ const ListCharacters = () => {
                  <li/>
     `);
 
-    const imagen = characters.map(characters => `${characters.img}`);
+    // const imagen = characters.map(characters => `${characters.img}`);
     // console.log(cardInformation);
     // console.log('imagen', imagen);
-    const imag2 = characters.name;
+    // const imag2 = characters.name;
     // console.log('what?', imag2);
     
     
