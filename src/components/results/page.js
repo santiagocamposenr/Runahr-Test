@@ -1,10 +1,63 @@
 import React, { Fragment } from 'react';
 import Navbar from '../Navbar';
+import { Typography } from '@material-ui/core';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea'
+import CardContent from '@material-ui/core/CardContent'
+import CardMedia from '@material-ui/core/CardMedia'
 
-const Page = () => {
+import './style.css';
+
+const Page = (props) => {
+  const {
+      results, 
+      goTo,
+  } = props;
+
+  const isEmpty =  results.length === 0;
   return(
       <Fragment>
           <Navbar />
+          <div className='results-page'>
+              {
+                isEmpty ?
+                <Typography variant='h5' component='h3' className='page-message'>
+                    Busca a tu personaje Favorito
+                </Typography>
+                :
+                results.map(item =>  
+                  <div
+                      key={item.char_id}
+                      className='card-container'
+                  >
+                  <Card
+                          className="card"
+                          onClick={() => goTo(`/details/${item.char_id}`)}
+                      >
+                          <CardActionArea>
+                              <CardMedia
+                                  className="card-media"
+                                  image={item.img}
+                                  title={item.name}
+                              />
+                              <CardContent>
+                                  <Typography gutterBottom variant="h5" component="h2">
+                                      {item.name}
+                                  </Typography>
+                                  <Typography component="p">
+                                      {item.nickname}
+                                      {/* {item.status} */}
+                                  </Typography>
+                              </CardContent>
+                          </CardActionArea>
+                  </Card>
+                   
+                  </div>
+                  )
+                 
+              }
+
+          </div>
       </Fragment>
   )
 }

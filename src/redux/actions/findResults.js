@@ -3,7 +3,7 @@ export const type = 'findResults';
 const findResults = text => {
     return{
         type,
-        payload: id,
+        payload: text,
 
     }; 
 };
