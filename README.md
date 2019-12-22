@@ -3,6 +3,7 @@
 This website have all characters about `"Breaking Bad"`. Now you can know a little more about theirs.
 
 ## Installation
+
 Fork and clone this repository, later put `npm install` in your terminal.
 
 `git clone https://github.com/RosaIsela31/Runahr-Test.git`
