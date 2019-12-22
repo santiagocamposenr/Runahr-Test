@@ -4,9 +4,10 @@ This website have all characters about `"Breaking Bad"`. Now you can know a litt
 
 ## Installation
 Fork and clone this repository, later put `npm install` in your terminal.
+
 `git clone https://github.com/RosaIsela31/Runahr-Test.git`
 
-##Tools
+## Tools
 * [React JS](https://es.reactjs.org/)
 * [Redux - Redux](https://redux.js.org/basics/usage-with-react/)
 * [Breaking Bad Api](https://breakingbadapi.com/)
