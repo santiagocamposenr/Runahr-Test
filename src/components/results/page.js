@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { useState, useEffect  } from 'react';
 import Navbar from '../Navbar';
 import { Typography } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
@@ -12,8 +13,8 @@ import items from '../../data/items';
 
 import './style.scss';
 
-
 const Page = (props) => {
+
   const {
       results, 
       goTo,
