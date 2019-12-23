@@ -20,6 +20,24 @@ class Results extends Component {
   }
 }
 
+// function Results  (props) {
+  
+//   // console.log(results);
+  
+//   const { results } = this.props;
+//   return(
+//     <div>
+
+//           <Page 
+//               results={results} 
+//               goTo={(path) => {
+//                  this.props.history.push(path);
+//               }}
+//           />
+//     </div>
+//   )
+// }
+
 const mapStateToProps = (state) => {
     return{
       results: state.results

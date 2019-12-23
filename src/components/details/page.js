@@ -14,7 +14,7 @@ function Page(props) {
   } = props;
 
   return (
-      <Fragment>
+      <Fragment className='details-container'>
           <CssBaseline />
 
           <Navbar />
@@ -25,7 +25,7 @@ function Page(props) {
                   className="paper-container"
               >
                   {currentItem ?
-                      <Fragment>
+                      <Fragment >
                           <Typography gutterBottom variant="h5" component="h2">
                               {currentItem.name}
                           </Typography>
@@ -51,7 +51,7 @@ function Page(props) {
 
                   <Button
                       color="primary"
-                      onClick={() => goTo('/results')}
+                      onClick={() => goTo('/')}
                   >
                       Volver
                   </Button>
