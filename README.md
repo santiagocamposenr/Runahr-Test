@@ -10,7 +10,7 @@ Fork and clone this repository, later put `npm install` in your terminal.
 
 ## Tools
 * [React JS](https://es.reactjs.org/)
-* [Redux - Redux](https://redux.js.org/basics/usage-with-react/)
+* [React - Redux](https://redux.js.org/basics/usage-with-react/)
 * [Breaking Bad Api](https://breakingbadapi.com/)
 * [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 * [Material-UI](https://material-ui.com/)

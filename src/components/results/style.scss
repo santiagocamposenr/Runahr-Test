@@ -34,3 +34,34 @@
   text-align: center;
 
 }
+
+@media (max-width: 375px){
+  
+  .card {
+    width: 300px;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 320px){
+  
+  .card {
+    width: 200px;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px){
+  
+  .card-media {
+    height: 140px;
+    height: 180px;
+  
+  }
+  
+  
+  .card {
+    width: 700px;
+    padding: 2rem;
+  }
+}

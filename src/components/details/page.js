@@ -53,7 +53,7 @@ function Page(props) {
                       color="primary"
                       onClick={() => goTo('/')}
                   >
-                      Volver
+                      Back
                   </Button>
               </Paper>
           </div>
