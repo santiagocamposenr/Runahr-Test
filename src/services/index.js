@@ -7,10 +7,10 @@ export const getCharacters = async () => {
         const response = await axios({
             url: `${baseURL}`,
             method: 'GET'
-        })      
-        
+        });     
         return response
+
     } catch (e) {
         console.log(e);
-    }
-}
+    };
+};

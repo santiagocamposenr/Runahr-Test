@@ -1,15 +1,17 @@
 import React from 'react';
 
+// Material UI
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-
-import Autocomplete from '../autocomplete';
-import bad from '../../img/bad.png';
 import Button from '@material-ui/core/Button';
 
+//Components
+import Autocomplete from '../autocomplete';
 
+// Image
+import bad from '../../img/bad.png';
 
-// import './style.css';
+// Sass
 import './style.scss';
 
 
@@ -25,16 +27,12 @@ function Page(props){
   return(
     <AppBar position='static' className='navbar-appbar'>
         <Toolbar className='navbar'>
-        <Button
-                      color="primary"
-                      onClick={() => goTo('/results')}
-                  >
-                      
-            <img alt='bad' src={bad} className='bad-img' />
-                  </Button>
-        
-       
-            
+            <Button
+                color="primary"
+                onClick={() => goTo('/results')}
+            >    
+                <img alt='bad' src={bad} className='bad-img' />
+            </Button>
             <Autocomplete 
                   text={text}
                   suggestions={suggestions}
@@ -43,11 +41,7 @@ function Page(props){
              />
         </Toolbar>
     </AppBar>
-  )
+  );
 };
 
 export default Page;
-
-
-//onchangetext will be to change when the text in the box change
-//onChangeSelection is only call when the user push ENTER 

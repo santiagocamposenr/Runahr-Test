@@ -1,4 +1,5 @@
 import { createStore, combineReducers } from 'redux';
+
 //Reducers
 import results from './reducers/results';
 import suggestions from './reducers/suggestions';
