@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+
+// Redux - actions
 import findSuggestions from '../../redux/actions/findSuggestions';
 import findResults from '../../redux/actions/findResults';
 
@@ -15,19 +17,18 @@ class Navbar extends Component {
 
     this.onChangeText = this.onChangeText.bind(this);
     this.onChangeSelection = this.onChangeSelection.bind(this);
-
-  }
+  };
    
   onChangeText(text){
-    this.setState({ text })
-    this.props.findSuggestions(text)
-  }
+      this.setState({ text })
+      this.props.findSuggestions(text)
+  };
 
   onChangeSelection(text ){ 
-    this.setState({ text })
-    this.props.findResults(text)
-    this.props.history.push('/results');
-  }
+      this.setState({ text })
+      this.props.findResults(text)
+      this.props.history.push('/results');
+  };
 
   render(){
       const { text } = this.state;
@@ -43,15 +44,15 @@ class Navbar extends Component {
                 this.props.history.push(path);
               }}
           />
-      )
-  }
-}
+      );
+  };
+};
 
 const mapStateToProps = (state) => {
   return{
     suggestions: state.suggestions
-  }
-}
+  };
+};
 
 const mapDispathToProps = {
     findSuggestions,
@@ -60,4 +61,4 @@ const mapDispathToProps = {
 
 export default withRouter(
     connect(mapStateToProps, mapDispathToProps)(Navbar)
-) 
+);

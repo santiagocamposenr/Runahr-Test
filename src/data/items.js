@@ -1,8 +1,5 @@
-// let char_id = 1;
-
 export default  [
   {
-    // id: id++,
     "char_id": 1,
     "name": "Walter White",
     "birthday": "09-07-1958",

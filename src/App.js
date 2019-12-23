@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
+//Components
 import Results from './components/results';
 import Details from './components/details';
 
+//Redux
 import store from './redux/store';
 
-import './App.css';
 
 class App extends Component {
   render(){
@@ -22,9 +23,7 @@ class App extends Component {
                     </BrowserRouter>
              </Provider>
       );
-  }
-}
+  };
+};
 
 export default App;
-
-// React-redux - integration between component's react and redux: PROVIDER
