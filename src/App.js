@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
-// import ListCharacters from './components/ListCharacters'
-//Components
 import Results from './components/results';
 import Details from './components/details';
 
@@ -17,7 +15,6 @@ class App extends Component {
             <Provider store={store}>
                     <BrowserRouter>
                             <Switch>
-                                    {/* <Route path='/' component={Results} />          */}
                                     <Route path='/details/:itemId' component={Details} />
                                     <Route path='/results' component={Results} />
                                     <Redirect from='/' to='/results' />
