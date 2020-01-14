@@ -31,12 +31,12 @@ class Navbar extends Component {
   };
 
   render(){
-      const { text } = this.state;
+      const { otro } = this.state;
       const { suggestions } = this.props;
 
       return(
           <Page
-              text={text}
+              text={otro}
               suggestions={suggestions }
               onChangeText={this.onChangeText}
               onChangeSelection ={this.onChangeSelection}  

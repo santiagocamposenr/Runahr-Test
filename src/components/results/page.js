@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 
 // Material UI
 import { Typography } from '@material-ui/core';
@@ -11,12 +11,27 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Navbar from '../Navbar';
 
 // Data
-import items from '../../data/items';
+// import items from '../../data/items';
 
 // Sass
 import './style.scss';
 
+import { getCharacters } from '../../services/index';
+
+
 const Page = (props) => {
+    const [characters, setCharacters] = useState([])
+
+    useEffect(() => {
+        const loadCharacters = async () => {
+            const response = await getCharacters()
+            if(response.status === 200){
+                    setCharacters(response.data)
+            };
+        };
+        loadCharacters();
+    }, []);
+
   const {
       results, 
       goTo,
@@ -30,7 +45,7 @@ const Page = (props) => {
           <div className='results-page'>
               {
                 isEmpty ?
-                items.map( item => 
+                characters.map( item => 
                 <div   
                     key={item.char_id}
                     className='container-default-img'
