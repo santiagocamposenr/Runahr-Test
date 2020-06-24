@@ -22,5 +22,7 @@ Testing GitHubPython
 New try
 Another change
 
+Testing close PR  function
+
 Testing the PR creation from the library
 _Happy hacking!_
