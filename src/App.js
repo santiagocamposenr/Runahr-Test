@@ -17,8 +17,8 @@ class App extends Component {
             <Provider store={store}>
                     <BrowserRouter>
                             <Switch>
-                                    <Route path='/details/:itemId' component={Details} />
-                                    <Route path='/results' component={Results} />
+                                    <Route path='/details/:itemId' component={Results} />
+                                    <Route path='/results' component={Details} />
                                     <Redirect from='/' to='/results' />
                             </Switch>
                     </BrowserRouter>
