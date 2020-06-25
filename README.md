@@ -21,8 +21,4 @@ Fork and clone this repository, later put `npm install` in your terminal.
 Testing GitHubPython
 New try
 Another change
-
-Testing close PR  function
-
-Testing the PR creation from the library
 _Happy hacking!_
